@@ -1,0 +1,322 @@
+format: replit.sdm
+version: 1
+size:
+  width: 1920
+  height: 1080
+background:
+  kind: solid
+  color:
+    kind: token
+    token: background
+  opacity: 1
+theme:
+  colors:
+    background: "#FBF6EE"
+    foreground: "#291F19"
+    surface: "#FFFFFF"
+    muted: "#6B5F57"
+    accent: "#EC4613"
+    green: "#22774F"
+    border: "#E2D8CB"
+    soft: "#F5F1EA"
+  fonts:
+    display: IBM Plex Sans KR
+    body: IBM Plex Sans KR
+assets:
+  americano:
+    src: images/americano.jpg
+  kiosk:
+    src: images/kiosk-current.jpg
+  latte:
+    src: images/cafe-latte.jpg
+elements:
+  - id: edgeBar
+    type: shape
+    frame:
+      x: 0
+      y: 0
+      width: 18
+      height: 1080
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: topRule
+    type: shape
+    frame:
+      x: 120
+      y: 128
+      width: 80
+      height: 7
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: section
+    type: text
+    frame:
+      x: 120
+      y: 70
+      width: 1500
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: VERIFICATION SCOPE
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: title
+    type: text
+    frame:
+      x: 120
+      y: 150
+      width: 1560
+      height: 110
+    body:
+      paragraphs:
+        - runs:
+            - text: MVP 구현·테스트 결과
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 40
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: footerRule
+    type: shape
+    frame:
+      x: 120
+      y: 1000
+      width: 1680
+      height: 2
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: border
+      opacity: 1
+  - id: footer
+    type: text
+    frame:
+      x: 120
+      y: 1020
+      width: 1300
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡  /  아이디어 해커톤
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: page
+    type: text
+    frame:
+      x: 1650
+      y: 1020
+      width: 150
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 16 / 17
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: numeralPanel
+    type: shape
+    frame:
+      x: 120
+      y: 325
+      width: 380
+      height: 540
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 0.07
+  - id: numeralPanelStrip
+    type: shape
+    frame:
+      x: 120
+      y: 325
+      width: 380
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: verifiedExamples
+    type: text
+    frame:
+      x: 150
+      y: 380
+      width: 320
+      height: 400
+    body:
+      paragraphs:
+        - runs:
+            - text: "6"
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 160
+            color:
+              kind: token
+              token: accent
+            weight: 700
+          align: center
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: verification
+    type: text
+    frame:
+      x: 550
+      y: 325
+      width: 1250
+      height: 540
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                요청한 한국어 주문 예문 6개를
+                실제 OpenAI 호출로 확인
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.3
+          spaceAfterPt: 12
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: 여러 발화에 걸친 수량 수정과 한 잔 옵션 보존 확인
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.3
+          spaceAfterPt: 12
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: |-
+                합성 한국어 음성으로
+                STT → 주문 해석 → 장바구니 경로 확인
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.3
+          spaceAfterPt: 12
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: 터치 주문·검증 오류·세션 격리 API 확인
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.3
+          spaceAfterPt: 12
+          bullet:
+            kind: character
+            character: •
+  - id: verificationSource
+    type: text
+    frame:
+      x: 120
+      y: 940
+      width: 1680
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: "근거: 개발 단계 실행 결과 · 2026.10.14"
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0

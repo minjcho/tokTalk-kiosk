@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/voice-kiosk-deck/"
+title = "톡톡 — 아이디어 해커톤"
+description = "터치 소리 톡과 대화 Talk를 담은 톡톡의 한국어 아이디어 해커톤 발표 덱. 17장 구성으로 주문 문제·아이디어·음성 및 터치 주문 MVP 시연을 소개합니다."
+version = "1.0.0"
+id = "artifacts/voice-kiosk-deck"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/voice-kiosk-deck/" ]
+localPort = 24219
+
+[services.development]
+run = "pnpm --filter @workspace/voice-kiosk-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/voice-kiosk-deck", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/voice-kiosk-deck/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24219"
+BASE_PATH = "/voice-kiosk-deck/"

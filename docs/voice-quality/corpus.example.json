@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "gs-quiet-01",
+      "group": { "dialect": "gyeongsang", "condition": "quiet" },
+      "device": { "os": "VERSION_REQUIRED", "browser": "VERSION_REQUIRED", "microphone": "DEVICE_CODE_REQUIRED" },
+      "consent": {
+        "purposeAgreed": false,
+        "externalProcessingAgreed": false,
+        "deidentifiedReviewed": false,
+        "withdrawn": false,
+        "recordedAt": "REPLACE_WITH_ACTUAL_UTC_TIMESTAMP",
+        "deleteBy": "REPLACE_WITH_ACTUAL_UTC_TIMESTAMP_MAX_7_DAYS"
+      },
+      "initialCart": [],
+      "turns": [
+        {
+          "audioFile": "gs-quiet-01.wav",
+          "expected": {
+            "cart": [{ "menuId": "americano", "quantity": 1, "temperature": "hot", "size": "M", "options": [] }],
+            "needsClarification": false,
+            "rejectionCodes": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc-clarification-01",
+      "group": { "dialect": "chungcheong", "condition": "ambiguous" },
+      "device": { "os": "VERSION_REQUIRED", "browser": "VERSION_REQUIRED", "microphone": "DEVICE_CODE_REQUIRED" },
+      "consent": {
+        "purposeAgreed": false,
+        "externalProcessingAgreed": false,
+        "deidentifiedReviewed": false,
+        "withdrawn": false,
+        "recordedAt": "REPLACE_WITH_ACTUAL_UTC_TIMESTAMP",
+        "deleteBy": "REPLACE_WITH_ACTUAL_UTC_TIMESTAMP_MAX_7_DAYS"
+      },
+      "initialCart": [],
+      "turns": [
+        { "audioFile": "cc-clarification-01a.wav", "expected": { "cart": [], "needsClarification": true, "rejectionCodes": [] } },
+        {
+          "audioFile": "cc-clarification-01b.wav",
+          "expected": {
+            "cart": [{ "menuId": "americano", "quantity": 2, "temperature": "ice", "size": "M", "options": [] }],
+            "needsClarification": false,
+            "rejectionCodes": []
+          }
+        }
+      ]
+    }
+  ]
+}

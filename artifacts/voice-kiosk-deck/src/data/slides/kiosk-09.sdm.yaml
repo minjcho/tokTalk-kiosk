@@ -1,0 +1,400 @@
+format: replit.sdm
+version: 1
+size:
+  width: 1920
+  height: 1080
+background:
+  kind: solid
+  color:
+    kind: token
+    token: background
+  opacity: 1
+theme:
+  colors:
+    background: "#FBF6EE"
+    foreground: "#291F19"
+    surface: "#FFFFFF"
+    muted: "#6B5F57"
+    accent: "#EC4613"
+    green: "#22774F"
+    border: "#E2D8CB"
+    soft: "#F5F1EA"
+  fonts:
+    display: IBM Plex Sans KR
+    body: IBM Plex Sans KR
+assets:
+  americano:
+    src: images/americano.jpg
+  kiosk:
+    src: images/kiosk-current.jpg
+  latte:
+    src: images/cafe-latte.jpg
+elements:
+  - id: edgeBar
+    type: shape
+    frame:
+      x: 0
+      y: 0
+      width: 18
+      height: 1080
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: topRule
+    type: shape
+    frame:
+      x: 120
+      y: 128
+      width: 80
+      height: 7
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: section
+    type: text
+    frame:
+      x: 120
+      y: 70
+      width: 1500
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: ITEM OPTIONS
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: title
+    type: text
+    frame:
+      x: 120
+      y: 150
+      width: 1560
+      height: 110
+    body:
+      paragraphs:
+        - runs:
+            - text: 한 잔씩 다르게, 맞춤 옵션
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 40
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: footerRule
+    type: shape
+    frame:
+      x: 120
+      y: 1000
+      width: 1680
+      height: 2
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: border
+      opacity: 1
+  - id: footer
+    type: text
+    frame:
+      x: 120
+      y: 1020
+      width: 1300
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡  /  아이디어 해커톤
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: page
+    type: text
+    frame:
+      x: 1650
+      y: 1020
+      width: 150
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 09 / 17
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: utterance
+    type: text
+    frame:
+      x: 120
+      y: 325
+      width: 1680
+      height: 95
+    body:
+      paragraphs:
+        - runs:
+            - text: "입력: “라떼 두 잔 중에 하나는 샷 추가요”"
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 26
+            color:
+              kind: token
+              token: accent
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: plainPanel
+    type: shape
+    frame:
+      x: 120
+      y: 445
+      width: 520
+      height: 345
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: plainPanelStrip
+    type: shape
+    frame:
+      x: 120
+      y: 445
+      width: 520
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: shotPanel
+    type: shape
+    frame:
+      x: 690
+      y: 445
+      width: 520
+      height: 345
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: shotPanelStrip
+    type: shape
+    frame:
+      x: 690
+      y: 445
+      width: 520
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: plainPhoto
+    type: image
+    frame:
+      x: 140
+      y: 480
+      width: 180
+      height: 250
+    assetId: latte
+    fit: contain
+  - id: shotPhoto
+    type: image
+    frame:
+      x: 710
+      y: 480
+      width: 180
+      height: 250
+    assetId: latte
+    fit: contain
+  - id: plainItem
+    type: text
+    frame:
+      x: 345
+      y: 495
+      width: 280
+      height: 260
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                카페라떼
+                기본 1잔
+                4,200원
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: shotItem
+    type: text
+    frame:
+      x: 915
+      y: 495
+      width: 280
+      height: 260
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                카페라떼
+                샷 추가 1잔
+                4,700원
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: totalPanel
+    type: shape
+    frame:
+      x: 1250
+      y: 445
+      width: 550
+      height: 345
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: green
+      opacity: 0.09
+  - id: totalPanelStrip
+    type: shape
+    frame:
+      x: 1250
+      y: 445
+      width: 550
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: green
+      opacity: 1
+  - id: total
+    type: text
+    frame:
+      x: 1300
+      y: 520
+      width: 500
+      height: 230
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                합계:
+                8,900원
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 46
+            color:
+              kind: token
+              token: green
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: priceSource
+    type: text
+    frame:
+      x: 120
+      y: 920
+      width: 1680
+      height: 65
+    body:
+      paragraphs:
+        - runs:
+            - text: "가격 근거: 현재 MVP 메뉴 가격표 · 2026.10.14"
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0

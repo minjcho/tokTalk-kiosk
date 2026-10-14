@@ -1,0 +1,155 @@
+[
+  {
+    "id": "kiosk-01",
+    "position": 1,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-01.sdm.yaml",
+    "title": "톡톡",
+    "description": "말하면, 주문이 됩니다. · 아이디어 해커톤",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-02",
+    "position": 2,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-02.sdm.yaml",
+    "title": "터치에서 대화로, 톡톡",
+    "description": "첫 번째 톡: 화면을 터치하는 소리",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-03",
+    "position": 3,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-03.sdm.yaml",
+    "title": "톡톡 한눈에 보기",
+    "description": "01 주문 입력의 어려움과 대상 고객",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-04",
+    "position": 4,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-04.sdm.yaml",
+    "title": "톡톡이 필요한 고객",
+    "description": "주요 이용 대상: 고령층과 키오스크 조작이 익숙하지 않은 고객",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-05",
+    "position": 5,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-05.sdm.yaml",
+    "title": "말로 주문하는 새로운 방법",
+    "description": "문제 가설: 작은 글씨와 여러 선택 단계가 주문 입력을 어렵게 할 수 있음",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-06",
+    "position": 6,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-06.sdm.yaml",
+    "title": "누르고 말하는 음성 주문",
+    "description": "첫 번째 터치: 마이크 녹음 시작",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-07",
+    "position": 7,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-07.sdm.yaml",
+    "title": "확인하고 완성하는 주문",
+    "description": "1 입력: 말하거나 메뉴를 터치",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-08",
+    "position": 8,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-08.sdm.yaml",
+    "title": "일상어로 주문하기",
+    "description": "“아아 두 잔 주세요” → 아이스 아메리카노 2잔",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-09",
+    "position": 9,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-09.sdm.yaml",
+    "title": "한 잔씩 다르게, 맞춤 옵션",
+    "description": "입력: “라떼 두 잔 중에 하나는 샷 추가요”",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-10",
+    "position": 10,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-10.sdm.yaml",
+    "title": "말로 수정하는 주문",
+    "description": "데모 시작: 라떼 3잔 중 1잔에 샷 추가",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-11",
+    "position": 11,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-11.sdm.yaml",
+    "title": "모호한 요청은 다시 확인",
+    "description": "메뉴·수정 대상이 불분명하면 추가 확인",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-12",
+    "position": 12,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-12.sdm.yaml",
+    "title": "터치로도 주문 가능",
+    "description": "현재 카탈로그: 커피·논커피 음료 7종",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-13",
+    "position": 13,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-13.sdm.yaml",
+    "title": "주문 확정은 마지막 터치로",
+    "description": "주문 확인 화면에서 품목·옵션·수량·합계 검토",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-14",
+    "position": 14,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-14.sdm.yaml",
+    "title": "대화는 초기화, 주문은 보관",
+    "description": "취소·완료·180초 무입력 시 고객 대화 문맥 정리",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-15",
+    "position": 15,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-15.sdm.yaml",
+    "title": "AI 해석, 서버 검증",
+    "description": "화면·녹음: React · TypeScript",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-16",
+    "position": 16,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-16.sdm.yaml",
+    "title": "MVP 구현·테스트 결과",
+    "description": "요청한 한국어 주문 예문 6개를 실제 OpenAI 호출로 확인",
+    "speakerNotes": ""
+  },
+  {
+    "id": "kiosk-18",
+    "position": 17,
+    "kind": "sdm",
+    "filepath": "src/data/slides/kiosk-18.sdm.yaml",
+    "title": "터치에 대화를 더한 톡톡",
+    "description": "MVP 시연 요약 · 질의응답",
+    "speakerNotes": ""
+  }
+]

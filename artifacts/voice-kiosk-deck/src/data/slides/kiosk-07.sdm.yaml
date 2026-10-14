@@ -1,0 +1,396 @@
+format: replit.sdm
+version: 1
+size:
+  width: 1920
+  height: 1080
+theme:
+  colors:
+    background: "#FBF6EE"
+    foreground: "#291F19"
+    surface: "#FFFFFF"
+    muted: "#6B5F57"
+    accent: "#EC4613"
+    green: "#22774F"
+    border: "#E2D8CB"
+    soft: "#F5F1EA"
+  fonts:
+    display: IBM Plex Sans KR
+    body: IBM Plex Sans KR
+background:
+  kind: solid
+  color:
+    kind: token
+    token: background
+  opacity: 1
+assets:
+  kiosk:
+    src: images/kiosk-current.jpg
+  latte:
+    src: images/cafe-latte.jpg
+  americano:
+    src: images/americano.jpg
+elements:
+  - id: edgeBar
+    type: shape
+    frame:
+      x: 0
+      y: 0
+      width: 18
+      height: 1080
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: topRule
+    type: shape
+    frame:
+      x: 120
+      y: 128
+      width: 80
+      height: 7
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: section
+    type: text
+    frame:
+      x: 120
+      y: 70
+      width: 1500
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: CUSTOMER JOURNEY
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: title
+    type: text
+    frame:
+      x: 120
+      y: 150
+      width: 1560
+      height: 110
+    body:
+      paragraphs:
+        - runs:
+            - text: 확인하고 완성하는 주문
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 40
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: footerRule
+    type: shape
+    frame:
+      x: 120
+      y: 1000
+      width: 1680
+      height: 2
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: border
+      opacity: 1
+  - id: footer
+    type: text
+    frame:
+      x: 120
+      y: 1020
+      width: 1300
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡  /  아이디어 해커톤
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: page
+    type: text
+    frame:
+      x: 1650
+      y: 1020
+      width: 150
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 07 / 17
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: stepPanel0
+    type: shape
+    frame:
+      x: 120
+      y: 335
+      width: 810
+      height: 230
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: stepPanel0Strip
+    type: shape
+    frame:
+      x: 120
+      y: 335
+      width: 810
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: stepText0
+    type: text
+    frame:
+      x: 155
+      y: 380
+      width: 740
+      height: 160
+    body:
+      paragraphs:
+        - runs:
+            - text: "1 입력: 말하거나 메뉴를 터치"
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 26
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: stepPanel1
+    type: shape
+    frame:
+      x: 990
+      y: 335
+      width: 810
+      height: 230
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: stepPanel1Strip
+    type: shape
+    frame:
+      x: 990
+      y: 335
+      width: 810
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: stepText1
+    type: text
+    frame:
+      x: 1025
+      y: 380
+      width: 740
+      height: 160
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                2 반영: 메뉴·수량·옵션과
+                가격 확인
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 26
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: stepPanel2
+    type: shape
+    frame:
+      x: 120
+      y: 595
+      width: 810
+      height: 230
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: stepPanel2Strip
+    type: shape
+    frame:
+      x: 120
+      y: 595
+      width: 810
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: stepText2
+    type: text
+    frame:
+      x: 155
+      y: 640
+      width: 740
+      height: 160
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                3 수정: 음성으로 정정하거나
+                화면에서 편집
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 26
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: stepPanel3
+    type: shape
+    frame:
+      x: 990
+      y: 595
+      width: 810
+      height: 230
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: green
+      opacity: 1
+  - id: stepText3
+    type: text
+    frame:
+      x: 1025
+      y: 640
+      width: 740
+      height: 160
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                4 확정: 최종 내용을 검토하고
+                터치로 주문 확정
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 26
+            color:
+              kind: token
+              token: background
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: completion
+    type: text
+    frame:
+      x: 120
+      y: 850
+      width: 1680
+      height: 85
+    body:
+      paragraphs:
+        - runs:
+            - text: "완료: 모의 주문번호 발급 후 다음 고객의 새 주문 시작"
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: green
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10

@@ -1,0 +1,252 @@
+format: replit.sdm
+version: 1
+size:
+  width: 1920
+  height: 1080
+theme:
+  colors:
+    background: "#FBF6EE"
+    foreground: "#291F19"
+    surface: "#FFFFFF"
+    muted: "#6B5F57"
+    accent: "#EC4613"
+    green: "#22774F"
+    border: "#E2D8CB"
+    soft: "#F5F1EA"
+  fonts:
+    display: IBM Plex Sans KR
+    body: IBM Plex Sans KR
+background:
+  kind: solid
+  color:
+    kind: token
+    token: background
+  opacity: 1
+assets:
+  kiosk:
+    src: images/kiosk-current.jpg
+  latte:
+    src: images/cafe-latte.jpg
+  americano:
+    src: images/americano.jpg
+elements:
+  - id: edgeBar
+    type: shape
+    frame:
+      x: 0
+      y: 0
+      width: 18
+      height: 1080
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: topRule
+    type: shape
+    frame:
+      x: 120
+      y: 128
+      width: 80
+      height: 7
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: section
+    type: text
+    frame:
+      x: 120
+      y: 70
+      width: 1500
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: IDEA HACKATHON
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: footerRule
+    type: shape
+    frame:
+      x: 120
+      y: 1000
+      width: 1680
+      height: 2
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: border
+      opacity: 1
+  - id: footer
+    type: text
+    frame:
+      x: 120
+      y: 1020
+      width: 1300
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡  /  아이디어 해커톤
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: page
+    type: text
+    frame:
+      x: 1650
+      y: 1020
+      width: 150
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 01 / 17
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: photoField
+    type: shape
+    frame:
+      x: 1100
+      y: 0
+      width: 820
+      height: 1080
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: soft
+      opacity: 1
+  - id: productScreen
+    type: image
+    frame:
+      x: 1180
+      y: 136
+      width: 660
+      height: 807
+    assetId: kiosk
+    fit: contain
+  - id: coverTitle
+    type: text
+    frame:
+      x: 120
+      y: 190
+      width: 970
+      height: 270
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 96
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: tagline
+    type: text
+    frame:
+      x: 120
+      y: 470
+      width: 920
+      height: 270
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                말하면, 주문이 됩니다.
+                점원에게 말하듯, 편하게 주문하세요
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 30
+            color:
+              kind: token
+              token: accent
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: coverBody
+    type: text
+    frame:
+      x: 120
+      y: 740
+      width: 920
+      height: 235
+    body:
+      paragraphs:
+        - runs:
+            - text: 한국어 음성·터치 기반 카페 주문 MVP
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 22
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 10
+        - runs:
+            - text: 아이디어 해커톤 · 문제 · 아이디어 · MVP 시연
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 22
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 10

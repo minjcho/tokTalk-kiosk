@@ -1,0 +1,390 @@
+format: replit.sdm
+version: 1
+size:
+  width: 1920
+  height: 1080
+theme:
+  colors:
+    background: "#FBF6EE"
+    foreground: "#291F19"
+    surface: "#FFFFFF"
+    muted: "#6B5F57"
+    accent: "#EC4613"
+    green: "#22774F"
+    border: "#E2D8CB"
+    soft: "#F5F1EA"
+  fonts:
+    display: IBM Plex Sans KR
+    body: IBM Plex Sans KR
+background:
+  kind: solid
+  color:
+    kind: token
+    token: background
+  opacity: 1
+assets:
+  kiosk:
+    src: images/kiosk-current.jpg
+  latte:
+    src: images/cafe-latte.jpg
+  americano:
+    src: images/americano.jpg
+elements:
+  - id: edgeBar
+    type: shape
+    frame:
+      x: 0
+      y: 0
+      width: 18
+      height: 1080
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: topRule
+    type: shape
+    frame:
+      x: 120
+      y: 128
+      width: 80
+      height: 7
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: section
+    type: text
+    frame:
+      x: 120
+      y: 70
+      width: 1500
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: CONTENTS
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: title
+    type: text
+    frame:
+      x: 120
+      y: 150
+      width: 1560
+      height: 110
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡 한눈에 보기
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 40
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: footerRule
+    type: shape
+    frame:
+      x: 120
+      y: 1000
+      width: 1680
+      height: 2
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: border
+      opacity: 1
+  - id: footer
+    type: text
+    frame:
+      x: 120
+      y: 1020
+      width: 1300
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡  /  아이디어 해커톤
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: page
+    type: text
+    frame:
+      x: 1650
+      y: 1020
+      width: 150
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 03 / 17
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: agendaPanel0
+    type: shape
+    frame:
+      x: 120
+      y: 370
+      width: 810
+      height: 250
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: agendaPanel0Strip
+    type: shape
+    frame:
+      x: 120
+      y: 370
+      width: 810
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: agendaText0
+    type: text
+    frame:
+      x: 160
+      y: 440
+      width: 730
+      height: 175
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                01 주문 입력의 어려움과
+                대상 고객
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 30
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: agendaPanel1
+    type: shape
+    frame:
+      x: 990
+      y: 410
+      width: 810
+      height: 250
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: agendaPanel1Strip
+    type: shape
+    frame:
+      x: 990
+      y: 410
+      width: 810
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: agendaText1
+    type: text
+    frame:
+      x: 1030
+      y: 480
+      width: 730
+      height: 175
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                02 톡톡의 음성·터치
+                주문 아이디어
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 30
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: agendaPanel2
+    type: shape
+    frame:
+      x: 120
+      y: 660
+      width: 810
+      height: 250
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: agendaPanel2Strip
+    type: shape
+    frame:
+      x: 120
+      y: 660
+      width: 810
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: agendaText2
+    type: text
+    frame:
+      x: 160
+      y: 730
+      width: 730
+      height: 175
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                03 MVP 시연과
+                주문 확인 흐름
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 30
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10
+  - id: agendaPanel3
+    type: shape
+    frame:
+      x: 990
+      y: 700
+      width: 810
+      height: 250
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: surface
+      opacity: 1
+  - id: agendaPanel3Strip
+    type: shape
+    frame:
+      x: 990
+      y: 700
+      width: 810
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: agendaText3
+    type: text
+    frame:
+      x: 1030
+      y: 770
+      width: 730
+      height: 175
+    body:
+      paragraphs:
+        - runs:
+            - text: 04 구현 결과·질의응답
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 30
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 10

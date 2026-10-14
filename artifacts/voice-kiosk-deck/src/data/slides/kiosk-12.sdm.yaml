@@ -1,0 +1,354 @@
+format: replit.sdm
+version: 1
+size:
+  width: 1920
+  height: 1080
+theme:
+  colors:
+    background: "#FBF6EE"
+    foreground: "#291F19"
+    surface: "#FFFFFF"
+    muted: "#6B5F57"
+    accent: "#EC4613"
+    green: "#22774F"
+    border: "#E2D8CB"
+    soft: "#F5F1EA"
+  fonts:
+    display: IBM Plex Sans KR
+    body: IBM Plex Sans KR
+background:
+  kind: solid
+  color:
+    kind: token
+    token: background
+  opacity: 1
+assets:
+  kiosk:
+    src: images/kiosk-current.jpg
+  latte:
+    src: images/cafe-latte.jpg
+  americano:
+    src: images/americano.jpg
+elements:
+  - id: edgeBar
+    type: shape
+    frame:
+      x: 0
+      y: 0
+      width: 18
+      height: 1080
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: topRule
+    type: shape
+    frame:
+      x: 120
+      y: 128
+      width: 80
+      height: 7
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: section
+    type: text
+    frame:
+      x: 120
+      y: 70
+      width: 1500
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: TOUCH ORDERING
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: title
+    type: text
+    frame:
+      x: 120
+      y: 150
+      width: 1560
+      height: 110
+    body:
+      paragraphs:
+        - runs:
+            - text: 터치로도 주문 가능
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 40
+            color:
+              kind: token
+              token: foreground
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: footerRule
+    type: shape
+    frame:
+      x: 120
+      y: 1000
+      width: 1680
+      height: 2
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: border
+      opacity: 1
+  - id: footer
+    type: text
+    frame:
+      x: 120
+      y: 1020
+      width: 1300
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡  /  아이디어 해커톤
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: page
+    type: text
+    frame:
+      x: 1650
+      y: 1020
+      width: 150
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 12 / 17
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: touchFeatures
+    type: text
+    frame:
+      x: 120
+      y: 330
+      width: 1100
+      height: 410
+    body:
+      paragraphs:
+        - runs:
+            - text: "현재 카탈로그: 커피·논커피 음료 7종"
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 22
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 10
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: 메뉴별 온도·크기·허용 옵션 선택
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 22
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 10
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: 장바구니에서 수량·옵션 수정 및 항목 삭제
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 22
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 10
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: 온도·크기 미지정 시 기본은 아이스·레귤러
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 22
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 10
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: 카푸치노의 기본 온도는 따뜻하게 제공
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 22
+            color:
+              kind: token
+              token: foreground
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 10
+          bullet:
+            kind: character
+            character: •
+  - id: screenField
+    type: shape
+    frame:
+      x: 1300
+      y: 310
+      width: 500
+      height: 600
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: soft
+      opacity: 1
+  - id: touchScreen
+    type: image
+    frame:
+      x: 1315
+      y: 320
+      width: 470
+      height: 575
+    assetId: kiosk
+    fit: contain
+  - id: photoShelf
+    type: shape
+    frame:
+      x: 880
+      y: 700
+      width: 340
+      height: 220
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: soft
+      opacity: 1
+  - id: photoShelfStrip
+    type: shape
+    frame:
+      x: 880
+      y: 700
+      width: 340
+      height: 6
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: accent
+      opacity: 1
+  - id: americanoPhoto
+    type: image
+    frame:
+      x: 910
+      y: 730
+      width: 120
+      height: 160
+    assetId: americano
+    fit: contain
+  - id: lattePhoto
+    type: image
+    frame:
+      x: 1080
+      y: 730
+      width: 120
+      height: 160
+    assetId: latte
+    fit: contain
+  - id: catalogSource
+    type: text
+    frame:
+      x: 120
+      y: 940
+      width: 1120
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: "카탈로그 근거: 현재 MVP 메뉴 설정 · 2026.10.14"
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: muted
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0

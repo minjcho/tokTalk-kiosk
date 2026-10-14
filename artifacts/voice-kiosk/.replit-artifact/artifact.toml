@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "톡톡 — AI 음성 주문"
+description = "터치하는 소리 톡에서 말로 대화하는 Talk로. 점원에게 말하듯 주문하는 톡톡 시연 앱. 음성·터치 주문과 장바구니 수정·확인을 지원하며 결제는 연결되어 있지 않습니다."
+version = "1.0.0"
+id = "artifacts/voice-kiosk"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24160
+
+[services.development]
+run = "pnpm --filter @workspace/voice-kiosk run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/voice-kiosk", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/voice-kiosk/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24160"
+BASE_PATH = "/"

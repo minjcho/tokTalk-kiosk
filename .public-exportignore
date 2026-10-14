@@ -1,0 +1,10 @@
+# Public-copy exclusions only. These do not remove original files or Git history.
+# Patterns use Python fnmatch with workspace-relative paths, not Git ignore syntax.
+.agents/*
+replit.md
+attached_assets/Pasted-*
+tuptalk.mp4
+--.mp4
+
+# Internal report references generated PDF/PPTX files outside the public source.
+artifacts/voice-kiosk-deck/EXPORT-CHECK.md

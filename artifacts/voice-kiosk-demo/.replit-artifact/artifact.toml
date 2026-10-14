@@ -1,0 +1,29 @@
+kind = "video"
+videoAspectRatio = "16:9"
+previewPath = "/voice-kiosk-demo/"
+title = "AI Voice Kiosk — 서비스 데모"
+description = "AI Voice Kiosk MVP와 카페 점주·다양한 한국어 사용자 고객의 주문 경험을 소개하는 한국어 서비스 데모 영상."
+version = "1.0.0"
+id = "artifacts/voice-kiosk-demo"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/voice-kiosk-demo/" ]
+localPort = 25292
+
+[services.development]
+run = "pnpm --filter @workspace/voice-kiosk-demo run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/voice-kiosk-demo", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/voice-kiosk-demo/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25292"
+BASE_PATH = "/voice-kiosk-demo/"

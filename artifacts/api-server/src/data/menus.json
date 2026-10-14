@@ -1,0 +1,59 @@
+[
+  {
+    "menuId": "americano", "name": "아메리카노", "englishName": "Americano",
+    "description": "깊고 고소한 에스프레소, 깔끔한 한 잔", "category": "coffee", "price": 3500,
+    "availableTemperatures": ["ice", "hot"], "defaultTemperature": "ice",
+    "availableSizes": [{"id":"M","name":"레귤러","price":0},{"id":"L","name":"라지","price":700}],
+    "availableOptions": [{"id":"shot","name":"샷 추가","price":500},{"id":"decaf","name":"디카페인","price":700},{"id":"less_ice","name":"얼음 적게","price":0},{"id":"extra_ice","name":"얼음 많이","price":0}],
+    "aliases": ["아메리카노","아아","아이스 아메리카노","차가운 아메리카노","뜨아","따뜻한 아메리카노","핫 아메리카노"],
+    "image": "americano"
+  },
+  {
+    "menuId": "cafe-latte", "name": "카페라떼", "englishName": "Café Latte",
+    "description": "진한 커피와 부드러운 우유의 만남", "category": "coffee", "price": 4200,
+    "availableTemperatures": ["ice", "hot"], "defaultTemperature": "ice",
+    "availableSizes": [{"id":"M","name":"레귤러","price":0},{"id":"L","name":"라지","price":700}],
+    "availableOptions": [{"id":"shot","name":"샷 추가","price":500},{"id":"decaf","name":"디카페인","price":700},{"id":"oat_milk","name":"오트밀크 변경","price":500},{"id":"soy_milk","name":"두유 변경","price":500},{"id":"less_ice","name":"얼음 적게","price":0},{"id":"extra_ice","name":"얼음 많이","price":0}],
+    "aliases": ["카페라떼","카페 라떼","라떼","라테","아이스 라떼","따뜻한 라떼"], "image": "latte"
+  },
+  {
+    "menuId": "vanilla-latte", "name": "바닐라라떼", "englishName": "Vanilla Latte",
+    "description": "은은한 바닐라 향이 더해진 달콤한 라떼", "category": "coffee", "price": 4700,
+    "availableTemperatures": ["ice", "hot"], "defaultTemperature": "ice",
+    "availableSizes": [{"id":"M","name":"레귤러","price":0},{"id":"L","name":"라지","price":700}],
+    "availableOptions": [{"id":"shot","name":"샷 추가","price":500},{"id":"decaf","name":"디카페인","price":700},{"id":"oat_milk","name":"오트밀크 변경","price":500},{"id":"soy_milk","name":"두유 변경","price":500},{"id":"less_sweet","name":"덜 달게","price":0},{"id":"less_ice","name":"얼음 적게","price":0},{"id":"extra_ice","name":"얼음 많이","price":0}],
+    "aliases": ["바닐라라떼","바닐라 라떼","바닐라 라테","바라"], "image": "vanilla"
+  },
+  {
+    "menuId": "cappuccino", "name": "카푸치노", "englishName": "Cappuccino",
+    "description": "풍성한 우유 거품과 에스프레소의 균형", "category": "coffee", "price": 4500,
+    "availableTemperatures": ["ice", "hot"], "defaultTemperature": "hot",
+    "availableSizes": [{"id":"M","name":"레귤러","price":0},{"id":"L","name":"라지","price":700}],
+    "availableOptions": [{"id":"shot","name":"샷 추가","price":500},{"id":"decaf","name":"디카페인","price":700},{"id":"oat_milk","name":"오트밀크 변경","price":500},{"id":"soy_milk","name":"두유 변경","price":500}],
+    "aliases": ["카푸치노","카프치노"], "image": "cappuccino"
+  },
+  {
+    "menuId": "caramel-macchiato", "name": "카라멜마키아토", "englishName": "Caramel Macchiato",
+    "description": "카라멜의 달콤함과 향긋한 에스프레소", "category": "coffee", "price": 4900,
+    "availableTemperatures": ["ice", "hot"], "defaultTemperature": "ice",
+    "availableSizes": [{"id":"M","name":"레귤러","price":0},{"id":"L","name":"라지","price":700}],
+    "availableOptions": [{"id":"shot","name":"샷 추가","price":500},{"id":"decaf","name":"디카페인","price":700},{"id":"oat_milk","name":"오트밀크 변경","price":500},{"id":"soy_milk","name":"두유 변경","price":500},{"id":"less_sweet","name":"덜 달게","price":0}],
+    "aliases": ["카라멜마키아토","카라멜 마키아토","캐러멜 마키아토","마끼아또"], "image": "caramel"
+  },
+  {
+    "menuId": "green-tea-latte", "name": "녹차라떼", "englishName": "Green Tea Latte",
+    "description": "향긋한 녹차와 우유, 여유로운 한 모금", "category": "non-coffee", "price": 4700,
+    "availableTemperatures": ["ice", "hot"], "defaultTemperature": "ice",
+    "availableSizes": [{"id":"M","name":"레귤러","price":0},{"id":"L","name":"라지","price":700}],
+    "availableOptions": [{"id":"oat_milk","name":"오트밀크 변경","price":500},{"id":"soy_milk","name":"두유 변경","price":500},{"id":"less_sweet","name":"덜 달게","price":0}],
+    "aliases": ["녹차라떼","녹차 라떼","그린티 라떼","말차라떼","말차 라떼"], "image": "green-tea"
+  },
+  {
+    "menuId": "choco-latte", "name": "초코라떼", "englishName": "Chocolate Latte",
+    "description": "진한 초콜릿이 선사하는 달콤한 휴식", "category": "non-coffee", "price": 4500,
+    "availableTemperatures": ["ice", "hot"], "defaultTemperature": "ice",
+    "availableSizes": [{"id":"M","name":"레귤러","price":0},{"id":"L","name":"라지","price":700}],
+    "availableOptions": [{"id":"oat_milk","name":"오트밀크 변경","price":500},{"id":"soy_milk","name":"두유 변경","price":500},{"id":"less_sweet","name":"덜 달게","price":0}],
+    "aliases": ["초코라떼","초코 라떼","초콜릿 라떼","핫초코","핫 초코"], "image": "chocolate"
+  }
+]

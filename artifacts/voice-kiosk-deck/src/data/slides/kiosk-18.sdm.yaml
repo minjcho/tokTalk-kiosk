@@ -1,0 +1,289 @@
+format: replit.sdm
+version: 1
+size:
+  width: 1920
+  height: 1080
+theme:
+  colors:
+    background: "#FBF6EE"
+    foreground: "#291F19"
+    surface: "#FFFFFF"
+    muted: "#6B5F57"
+    accent: "#EC4613"
+    green: "#22774F"
+    border: "#E2D8CB"
+    soft: "#F5F1EA"
+  fonts:
+    display: IBM Plex Sans KR
+    body: IBM Plex Sans KR
+background:
+  kind: solid
+  color:
+    kind: token
+    token: green
+  opacity: 1
+assets:
+  kiosk:
+    src: images/kiosk-current.jpg
+  latte:
+    src: images/cafe-latte.jpg
+  americano:
+    src: images/americano.jpg
+elements:
+  - id: edgeBar
+    type: shape
+    frame:
+      x: 0
+      y: 0
+      width: 18
+      height: 1080
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: background
+      opacity: 1
+  - id: topRule
+    type: shape
+    frame:
+      x: 120
+      y: 128
+      width: 80
+      height: 7
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: background
+      opacity: 1
+  - id: section
+    type: text
+    frame:
+      x: 120
+      y: 70
+      width: 1500
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡 / DEMO & Q&A
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 16
+            color:
+              kind: token
+              token: background
+            weight: 700
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: title
+    type: text
+    frame:
+      x: 120
+      y: 150
+      width: 1560
+      height: 110
+    body:
+      paragraphs:
+        - runs:
+            - text: 터치에 대화를 더한 톡톡
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 40
+            color:
+              kind: token
+              token: background
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: footerRule
+    type: shape
+    frame:
+      x: 120
+      y: 1000
+      width: 1680
+      height: 2
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: background
+      opacity: 0.35
+  - id: footer
+    type: text
+    frame:
+      x: 120
+      y: 1020
+      width: 1300
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 톡톡  /  아이디어 해커톤
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: background
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: page
+    type: text
+    frame:
+      x: 1650
+      y: 1020
+      width: 150
+      height: 60
+    body:
+      paragraphs:
+        - runs:
+            - text: 17 / 17
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 14.5
+            color:
+              kind: token
+              token: background
+            weight: 400
+          lineHeight: 1.28
+          spaceAfterPt: 0
+  - id: pilotField
+    type: shape
+    frame:
+      x: 120
+      y: 335
+      width: 740
+      height: 520
+    geometry:
+      kind: preset
+      preset: rect
+    fill:
+      kind: solid
+      color:
+        kind: token
+        token: background
+      opacity: 0.09
+  - id: proposal
+    type: text
+    frame:
+      x: 160
+      y: 395
+      width: 660
+      height: 380
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                말하면,
+                주문이 됩니다.
+                점원에게 말하듯,
+                편하게 주문하세요
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 34
+            color:
+              kind: token
+              token: background
+            weight: 700
+          lineHeight: 1.12
+          spaceAfterPt: 10
+  - id: pilotCriteria
+    type: text
+    frame:
+      x: 970
+      y: 345
+      width: 830
+      height: 535
+    body:
+      paragraphs:
+        - runs:
+            - text: |-
+                MVP 시연: 라떼 주문 → 한 잔 옵션
+                → 수량 정정 → 화면 확인
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: background
+            weight: 400
+          lineHeight: 1.3
+          spaceAfterPt: 12
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: |-
+                고객의 최종 터치로
+                확정·모의 주문번호 발급
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: background
+            weight: 400
+          lineHeight: 1.3
+          spaceAfterPt: 12
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: |-
+                결제·POS·제조 전달은
+                MVP 범위에 포함하지 않음
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: background
+            weight: 400
+          lineHeight: 1.3
+          spaceAfterPt: 12
+          bullet:
+            kind: character
+            character: •
+        - runs:
+            - text: 감사합니다 · 질문을 받겠습니다
+          defaultRunStyle:
+            font:
+              kind: token
+              token: body
+            sizePt: 23
+            color:
+              kind: token
+              token: background
+            weight: 400
+          lineHeight: 1.3
+          spaceAfterPt: 12
+          bullet:
+            kind: character
+            character: •
